@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/style/design.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE MIM</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE MIM</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JULIANA PARRA </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">SOBRE MIM</h3>
+  <p class="w3-center"><em> </em></p>
+  <section class="card-container-img">
+    <div class="front"><img src="/images/profile_picture.jpeg" class="card-photo" alt="Photo of Me"></div>
+    <div class="back">  
+      <div class="details">
+        <h2>Juliana Parra<br><span>Dev Front-end</span></h2>
+        <p>Bem-vindos! <br>“Se você é o mais inteligente da mesa, esta sentado na mesa errada”.<br>Sempre estive em busca de crescimento e novos desafios!
+          Estou cursando Análise e desenvolvimento de sistemas e nos últimos anos desenvolvi minhas habilidades com programação. <br>
+          Conheci o front-end em 2018 e desde então me apaixonei pela programação web, conhecendo até um pouco de Photoshop e UX. <br></p>
+      </div>
+    </div>
+  </section>
+  <section class="card-container">
+  <div class="container-card">
+    <div class="card-1">
+      <div class="box-card">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h2>80<span>%</span></h2>
+          </div>
+        </div>
+        <h2 class="text-card">Html</h2>
+      </div>
+    </div>
+    <div class="card-1">
+      <div class="box-card">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h2>75<span>%</span></h2>
+          </div>
+        </div>
+        <h2 class="text-card">CSS</h2>
+      </div>
+    </div>
+    <div class="card-1">
+      <div class="box-card">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h2>40<span>%</span></h2>
+          </div>
+        </div>
+        <h2 class="text-card">JavaScript</h2>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Clientes Felizes
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">20+</span><br>
+    Projetos Finalizados
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">250+</span><br>
+    Cafés tomados
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1500+</span><br>
+    Linhas de códigos
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MEUS TRABALHOS</h3>
+  <p class="w3-center"><em>Eu gosto de todas as etapas do processo do projeto, <br> desde a discussão e elaboração ao conceito e execução, <br> mas encontro a maior satisfação ao ver o projeto finalizado e rodando, como magica! <br>
+    Conheça um pouco do meu trabalho.</em></p>
+
+<div class="w3-center w3-container icons">
+    <a href="https://app.rocketseat.com.br/me/juliana-parra-1577950874" class="fa fa-rocket w3-hover-opacity" aria-hidden="true"></a>
+    <a href="https://github.com/Parrajuliana" class="fa fa-github w3-hover-opacity" aria-hidden="true"></a>
+    <a href="https://www.linkedin.com/in/juliana-parra-00701818a/" class="fa fa-linkedin w3-hover-opacity"></a>
+</div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTATO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Entre em contato</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom  container-contact">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> São Paulo, SP<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: parra.juliana96@gmail.com<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar ao topo</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://app.rocketseat.com.br/me/juliana-parra-1577950874" class="fa fa-rocket w3-hover-opacity" aria-hidden="true"></a>
+    <a href="https://github.com/Parrajuliana" class="fa fa-github w3-hover-opacity" aria-hidden="true"></a>
+    <a href="https://www.linkedin.com/in/juliana-parra-00701818a/" class="fa fa-linkedin w3-hover-opacity"></a>
+  </div>
+  <p>Powered by Juliana Parra</p>
+</footer>
+ 
+<script src="/js/script.js"></script>
+
+</body>
+</html>

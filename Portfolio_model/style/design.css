@@ -1,0 +1,343 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #101010;
+  color: #fff;
+}
+
+.fa {
+  text-decoration: none;
+}
+
+/* Neon FIAP */
+/* text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
+  color: rgb(237, 20, 91); */
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/images/notebook.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Contact) */
+.bgimg-2 {
+  background-image: url("/images/pexels-kevin-ku-577585.jpg");
+  min-height: 300px;
+}
+
+.w3-row.container-picture {
+  display: flex;
+  align-items: center;
+}
+
+.w3-center.w3-container.icons {
+   font-size: 3em;
+   letter-spacing: 50%;
+   text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
+    color: #ed145b;
+}
+
+.w3-black, .w3-hover-black:hover {
+  /* color: #fff!important; */
+  background-color: #000!important;
+  text-shadow: rgba(237, 20, 91, 0.75) 4px 0px 20px;
+  color: #ed145b!important;
+}
+
+/* Contact */
+.w3-col.m8.w3-panel {
+   float: none;
+   margin: 0 auto;
+}
+
+.w3-padding-64 {
+    padding-top: 60px!important;
+    padding-bottom: 60px!important;
+}
+
+.-wide {letter-spacing: 10px;}
+.-hover-opacity {cursor: pointer;}
+
+/* Animation Card */
+section.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.container-card {
+  position: relative;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-card .card-1 {
+  position: relative;
+  width: 250px;
+  background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container-card .card-1:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(237, 20, 91, 0.75); 
+  /* Alterar sombra do card */
+}
+
+.container-card .card-1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 2555, .03);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background: #222;
+  z-index: 1000;
+}
+
+.percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.percent .number h2 {
+  color: #777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.card-1:hover .percent .number h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.percent .number h2 span {
+  font-size: 24px;
+  color: #777;
+  transition: 0.5s;
+}
+
+.card-1:hover .percent .number h2 span {
+  color: #fff;
+}
+
+.text-card {
+  position: relative;
+  color: #777;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.card-1:hover .text-card {
+  color: #fff;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2){
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.card-1:nth-child(1) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: #00ff43;
+}
+
+.card-1:nth-child(2) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 75) / 100);
+  stroke: #00a1ff;
+}
+
+.card-1:nth-child(3) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+  stroke: #ed145b;
+}
+
+/* Card img */
+section.card-container-img {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  height: 450px;
+  transform-style: preserve-3d;
+}
+
+section.card-container-img img {
+  width: 100%;
+  height: 100%;
+}
+
+section.card-container-img .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+section.card-container-img:hover .front{
+  transform: rotateX(-180deg);
+}
+
+section.card-container-img .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+section.card-container-img .back::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(255, 255, 2555, .01); */
+}
+
+section.card-container-img:hover .back{
+  transform: rotateX(0deg);
+}
+
+section.card-container-img .back .details {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+section.card-container-img .back .details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+section.card-container-img .back .details p {
+  margin: 10px;
+}
+
+section.card-container-img .back .details h2 span {
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+.container-contact {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 5px 10px #a7a7a7;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+  /* .bgimg-1 {
+    background-size: 60%;
+  } */
+}
+
+@media (max-width: 600px){
+  .container-card .card-1 {
+    margin: 20px auto;
+  }
+
+  .container-card {
+    display: block;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .w3-hide-small {
+      display: block!important;
+  }
+
+  .w3-row.container-picture {
+    display: block!important;
+  }
+}
