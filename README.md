@@ -9,3 +9,4 @@ Criar um projeto no menor tempo possível, com recursos que encontrei na interne
 
 ## ✨ Resultado:
 
+![](https://github.com/Parrajuliana/Evolucao-do-Portfolio/blob/master/Portfolio_model/images/example-picture.png)
